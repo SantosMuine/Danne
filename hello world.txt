@@ -1,0 +1,8 @@
+import random
+
+letters = ['A', 'B', 'C', 'a', 'b', 'c', '1', '2', '3']
+
+text = [letters[random.randint(0, len(letters))] for _ in range(10)]
+text[5] = letters[random.randint(0, 3)]
+
+print(''.join(text))
